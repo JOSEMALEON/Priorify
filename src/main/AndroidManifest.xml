@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.priorify">
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Priorify">
+        <!-- El tema general de tu app -->
+
+        <!-- Activity de Splash Screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Splash"
+            android:launchMode="singleTask"
+            android:label="@string/app_name">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- Main Activity de la aplicación -->
+    <activity
+        android:name=".MainActivity"
+        android:theme="@style/Theme.Priorify"
+        android:label="@string/app_name">
+    </activity>
+
+</application>
+    </manifest>

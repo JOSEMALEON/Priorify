@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base de la aplicación -->
+    <style name="Base.Theme.Priorify" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Personaliza tu tema base aquí -->
+    </style>
+
+    <!-- Tema específico para el Splash -->
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item> <!-- Fondo para el Splash -->
+    </style>
+
+    <!-- Tema principal de la aplicación -->
+    <style name="Theme.Priorify" parent="Base.Theme.Priorify">
+        <!-- Personaliza el tema de la aplicación principal -->
+    </style>
+</resources>

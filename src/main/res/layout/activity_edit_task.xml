@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para el título de la tarea -->
+    <EditText
+        android:id="@+id/editTaskTitleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar título de la tarea"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <!-- Campo para la descripción de la tarea -->
+    <EditText
+        android:id="@+id/editTaskDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar descripción de la tarea"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:minLines="3" />
+
+    <!-- Selector de hora -->
+    <TimePicker
+        android:id="@+id/editTaskTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:padding="8dp" />
+
+    <!-- Botón para guardar los cambios -->
+    <Button
+        android:id="@+id/saveTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar cambios"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
